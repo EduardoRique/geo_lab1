@@ -9,6 +9,15 @@
 */
 void calcPerimetroTrianguloEquilatero(float *b);
 
+/**
+*@brief Funcao que requisita parametros para o calculo do perimetro de um retangulo
+*@e apresenta o resultado na tela
+*@param *b ponteiro do tipo float que aponta para o valor da base
+*@param *h ponteiro do tipo float que aponta para o valor da altura
+*@return void
+*/
+void calcPerimetroRetangulo(float *b, float *h);
+
 
 /**
 *@brief Funcao que passa parametro para outra funcao fazer o calculo da perimetro
@@ -17,5 +26,13 @@ void calcPerimetroTrianguloEquilatero(float *b);
 *@return void
 */
 void calcPerimetroQuadrado(float *l);
+
+/**
+*@brief Funcao que requisita parametros para o calculo do perimetro de um circulo
+*@e apresenta o resultado na tela
+*@param *r ponteiro do tipo float que aponta para o valor do raio
+*@return void
+*/
+void calcPerimetroCirculo(float *r);
 
 #endif

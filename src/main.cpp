@@ -52,20 +52,30 @@ do{
     
     switch(opcao) {
         case 1:
-            float base; /**< base do triangulo*/
-            float altura; /**<altura do triangulo*/
+            float b; /**< base do triangulo*/
+            float a; /**<altura do triangulo*/
 
             cout << "Digite o tamanho da base do triangulo: ";
-            cin >> base;
+            cin >> b;
             cout << "Digite o tamanho da altura do triangulo: ";
+            cin >> a;
+
+            calcAreaTrianguloEquilatero(&b, &a);
+            calcPerimetroTrianguloEquilatero(&b);
+            break;
+        case 2:
+            float base; /**< base do retangulo*/
+            float altura; /**<altura do retangulo*/
+
+            cout << "Digite o tamanho da base do retangulo: ";
+            cin >> base;
+            cout << "Digite o tamanho da altura do retangulo: ";
             cin >> altura;
 
-            calcAreaTrianguloEquilatero(&base, &altura);
-            calcPerimetroTrianguloEquilatero(&base);
+
+            calcAreaRetangulo(&base, &altura);
+            calcPerimetroRetangulo(&base, &altura);
             break;
-        /**case 2:
-            calcRetangulo();
-            break;*/
         case 3:
             float lado; /**< lado do quadrado*/
             cout << "Digite o tamanho do lado do quadrado: ";
@@ -74,19 +84,28 @@ do{
             calcAreaQuadrado(&lado);
             calcPerimetroQuadrado(&lado);
             break;
-        /**case 4:
-            calcCirculo();
+        case 4:
+            float raio; /**< raio do circulo*/
+            cout << "Digite o tamanho do raio do circulo: ";
+            cin >> raio;
+
+            calcAreaCirculo(&raio);
+            calcPerimetroCirculo(&raio);
             break;
-        case 5:
-            calcPiramideBaseQuadrangular();
-            break;
-        case 6:
+        /**case 5:
+            float lado_base; /**<lado da base da pirame */
+            //float lado_base; /**<lado da base da pirame */
+            //float lado_base; /**<lado da base da pirame */
+
+            //calcPiramideBaseQuadrangular();
+            //break;
+        /**case 6:
             calcCubo();
             break;
-        case 7:
+        /**case 7:
             calcParalelogramo();
             break;
-        case 8:
+        /**case 8:
             calcEsfera();
             break; */
         default:
