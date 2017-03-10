@@ -15,6 +15,7 @@ using std::endl;
 
 #include "calcArea.h"
 #include "calcPerimetro.h"
+#include "calcVolume.h"
 
 //#DEFINE pi = 3.14159; /** < Definicao do PI */
 
@@ -78,6 +79,7 @@ do{
             break;
         case 3:
             float lado; /**< lado do quadrado*/
+            
             cout << "Digite o tamanho do lado do quadrado: ";
             cin >> lado;
 
@@ -86,26 +88,35 @@ do{
             break;
         case 4:
             float raio; /**< raio do circulo*/
+            
             cout << "Digite o tamanho do raio do circulo: ";
             cin >> raio;
 
             calcAreaCirculo(&raio);
             calcPerimetroCirculo(&raio);
             break;
-        /**case 5:
-            float lado_base; /**<lado da base da pirame */
-            //float lado_base; /**<lado da base da pirame */
-            //float lado_base; /**<lado da base da pirame */
+        case 5:
+            float lado_base; /**<lado da base da piramide */
+            float lado_triangulo; /**<lado da base do triangulo da piramide */
+            float altura_triangulo; /**<altura do triangulo da piramide */
 
-            //calcPiramideBaseQuadrangular();
-            //break;
+            cout << "Digite o tamanho da base da piramide: ";
+            cin >> lado_base;
+            cout << "Digite o tamanho da base lateral: ";
+            cin >> lado_triangulo;
+            cout << "Digite o tamanho da altura da piramide: ";
+            cin >> altura_triangulo;
+
+            calcAreaPiramide(&lado_base, &lado_triangulo, &altura_triangulo);
+            calcVolumePiramide(&lado_base, &altura_triangulo);
+            break;
         /**case 6:
             calcCubo();
             break;
-        /**case 7:
+        case 7:
             calcParalelogramo();
             break;
-        /**case 8:
+        case 8:
             calcEsfera();
             break; */
         default:

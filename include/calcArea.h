@@ -36,4 +36,14 @@ void calcAreaQuadrado(float *l);
 */
 void calcAreaCirculo(float *r);
 
+/**
+*@brief Funcao que passa parametro para outra funcao fazer o calculo da area de uma 
+*@piramide e apresenta o resultado na tela
+*@param *b1 ponteiro do tipo float que aponta para o valor da base
+*@param *b2 ponteiro do tipo float que aponta para o valor da base do triangulo
+*@param *h ponteiro do tipo float que aponta par o valor da altura
+*@return void
+*/
+void calcAreaPiramide(float *b1, float *b2, float *h);
+
 #endif
