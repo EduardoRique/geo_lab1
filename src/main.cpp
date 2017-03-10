@@ -13,7 +13,8 @@ using std::cout;
 using std::cin;
 using std::endl;
 
-#include "calcTrianguloEquilatero.h"
+#include "calcArea.h"
+#include "calcPerimetro.h"
 
 //#DEFINE pi = 3.14159; /** < Definicao do PI */
 
@@ -51,28 +52,42 @@ do{
     
     switch(opcao) {
         case 1:
-            calcTrianguloEquilatero();
+            float base; /**< base do triangulo*/
+            float altura; /**<altura do triangulo*/
+
+            cout << "Digite o tamanho da base do triangulo: ";
+            cin >> base;
+            cout << "Digite o tamanho da altura do triangulo: ";
+            cin >> altura;
+
+            calcAreaTrianguloEquilatero(&base, &altura);
+            calcPerimetroTrianguloEquilatero(&base);
             break;
         /**case 2:
-            calcRetangulo(void);
-            break;
+            calcRetangulo();
+            break;*/
         case 3:
-            calcQuadrado(void);
+            float lado; /**< lado do quadrado*/
+            cout << "Digite o tamanho do lado do quadrado: ";
+            cin >> lado;
+
+            calcAreaQuadrado(&lado);
+            calcPerimetroQuadrado(&lado);
             break;
-        case 4:
-            calcCirculo(void);
+        /**case 4:
+            calcCirculo();
             break;
         case 5:
-            calcPiramideBaseQuadrangular(void);
+            calcPiramideBaseQuadrangular();
             break;
         case 6:
-            calcCubo(void);
+            calcCubo();
             break;
         case 7:
-            calcParalelogramo(void);
+            calcParalelogramo();
             break;
         case 8:
-            calcEsfera(void);
+            calcEsfera();
             break; */
         default:
             cout << "Programa finalizado" << endl;

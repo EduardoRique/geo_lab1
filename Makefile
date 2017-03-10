@@ -11,19 +11,25 @@ INCLUDEPATH = include/
 CPPFLAGS = -Wall -pedantic -ansi -std=c++11 -I$(INCLUDEPATH)
 CC = g++
 
-OBJS = $(BUILDPATH)main.o $(BUILDPATH)calcTrianguloEquilatero.o $(BUILDPATH)trianguloEquilatero.o
+OBJS = $(BUILDPATH)main.o $(BUILDPATH)calcArea.o $(BUILDPATH)area.o $(BUILDPATH)calcPerimetro.o $(BUILDPATH)perimetro.o
 
 $(PROG) : $(OBJS)
 	$(CC) -o $(BINPATH)$(PROG) $(OBJS)
 
-$(BUILDPATH)main.o : $(INCLUDEPATH)calcTrianguloEquilatero.h
+$(BUILDPATH)main.o : $(INCLUDEPATH)calcArea.h $(INCLUDEPATH)calcPerimetro.h
 	$(CC) $(CPPFLAGS) -c $(SRCPATH)main.cpp -o $@
 
-$(BUILDPATH)calcTrianguloEquilatero.o : $(INCLUDEPATH)calcTrianguloEquilatero.h $(INCLUDEPATH)trianguloEquilatero.h
-	$(CC) $(CPPFLAGS) -c $(SRCPATH)calcTrianguloEquilatero.cpp -o $@
+$(BUILDPATH)calcArea.o : $(INCLUDEPATH)calcArea.h $(INCLUDEPATH)area.h
+	$(CC) $(CPPFLAGS) -c $(SRCPATH)calcArea.cpp -o $@
 
-$(BUILDPATH)trianguloEquilatero.o : $(INCLUDEPATH)trianguloEquilatero.h
-	$(CC) $(CPPFLAGS) -c $(SRCPATH)trianguloEquilatero.cpp -o $@
+$(BUILDPATH)area.o : $(INCLUDEPATH)area.h
+	$(CC) $(CPPFLAGS) -c $(SRCPATH)area.cpp -o $@
+
+$(BUILDPATH)calcPerimetro.o : $(INCLUDEPATH)calcPerimetro.h $(INCLUDEPATH)perimetro.h
+	$(CC) $(CPPFLAGS) -c $(SRCPATH)calcPerimetro.cpp -o $@
+
+$(BUILDPATH)perimetro.o : $(INCLUDEPATH)perimetro.h
+	$(CC) $(CPPFLAGS) -c $(SRCPATH)perimetro.cpp -o $@
 
 clean :
 	rm -f core $(BINPATH)$(PROG) $(OBJS)
