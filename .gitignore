@@ -1,5 +1,8 @@
 #Ignore files in directories
-build bin lib test/*
+build lib/*
+
+#Ignore binaries
+bin/*
 
 # Compiled Object files
 *.slo
