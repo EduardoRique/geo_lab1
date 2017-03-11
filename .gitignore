@@ -1,3 +1,6 @@
+#Ignore files in directories
+build bin lib test/*
+
 # Compiled Object files
 *.slo
 *.lo
