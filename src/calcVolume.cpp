@@ -1,3 +1,14 @@
+/** 
+*@file calcVolume.cpp
+*@brief Arquivo cabecalho contendo a definicao de funcoes que apresentam 
+*		os resultados dos calculos de volume na tela e realizam a passagem 
+*		de parametros, para funcoes que farao os calculos
+*@author Luís Eduardo RIque
+*@author Ygor Almeida
+*@since 09/03/2017
+*@date  11/03/2017
+*/
+
 #include <iostream>
 using std::cout;
 using std::cin;

@@ -1,3 +1,14 @@
+/** 
+*@file perimetro.h
+*@brief Arquivo cabecalho contendo a definicao de funcoes que realizam os 
+*		calculos para determinar perimetros e retornam valores para outras
+*		funcoes, para serem apresentados na tela
+*@author Luís Eduardo RIque
+*@author Ygor Almeida
+*@since 09/03/2017
+*@date  11/03/2017
+*/
+
 #ifndef PERIMETRO_H
 #define PERIMETRO_H
 

@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Geometrica: Código-Fonte de calcVolume.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Geometrica
+   </div>
+   <div id="projectbrief">Programa que permite o calculo de perimetro, area e volume de figuras geometricas, como: traingulo equilatero, retangulo, quadrado, circulo, piramide com base quadrangular,  cubo, paralelepipedo e esfera.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;Principal</span></a></li>
+      <li class="current"><a href="files.html"><span>Arquivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;Arquivos</span></a></li>
+      <li><a href="globals.html"><span>Membros&#160;dos&#160;Arquivos</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">calcVolume.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="calcVolume_8h.html">Vá para a documentação deste arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifndef CALCVOLUME_H</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define CALCVOLUME_H</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keywordtype">void</span> <a class="code" href="calcVolume_8h.html#a9612bd6ff65a88c3a7219ae9438a697b">calcVolumePiramide</a>(<span class="keywordtype">float</span> *b, <span class="keywordtype">float</span> *h);</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keywordtype">void</span> <a class="code" href="calcVolume_8h.html#a0a6cce6f44c4dd36e7a3824530d3ab8f">calcVolumeCubo</a>(<span class="keywordtype">float</span> *l);</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keywordtype">void</span> <a class="code" href="calcVolume_8h.html#af0aa363e6e2e8b85fd30929e2449d823">calcVolumeParalelepipedo</a>(<span class="keywordtype">float</span> *h, <span class="keywordtype">float</span> *c, <span class="keywordtype">float</span> *l);</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keywordtype">void</span> <a class="code" href="calcVolume_8h.html#a837e062adbd8081d172d36c75f68e6d6">calcVolumeEsfera</a>(<span class="keywordtype">float</span> *r);</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="calcVolume_8h_html_a837e062adbd8081d172d36c75f68e6d6"><div class="ttname"><a href="calcVolume_8h.html#a837e062adbd8081d172d36c75f68e6d6">calcVolumeEsfera</a></div><div class="ttdeci">void calcVolumeEsfera(float *r)</div><div class="ttdoc">Funcao que passa parametro para outra funcao fazer o calculo do volume de uma  e apresenta o resultad...</div><div class="ttdef"><b>Definition:</b> calcVolume.cpp:62</div></div>
+<div class="ttc" id="calcVolume_8h_html_a9612bd6ff65a88c3a7219ae9438a697b"><div class="ttname"><a href="calcVolume_8h.html#a9612bd6ff65a88c3a7219ae9438a697b">calcVolumePiramide</a></div><div class="ttdeci">void calcVolumePiramide(float *b, float *h)</div><div class="ttdoc">Funcao que passa parametro para outra funcao fazer o calculo do volume de uma  e apresenta o resultad...</div><div class="ttdef"><b>Definition:</b> calcVolume.cpp:27</div></div>
+<div class="ttc" id="calcVolume_8h_html_a0a6cce6f44c4dd36e7a3824530d3ab8f"><div class="ttname"><a href="calcVolume_8h.html#a0a6cce6f44c4dd36e7a3824530d3ab8f">calcVolumeCubo</a></div><div class="ttdeci">void calcVolumeCubo(float *l)</div><div class="ttdoc">Funcao que passa parametro para outra funcao fazer o calculo do volume de um  e apresenta o resultado...</div><div class="ttdef"><b>Definition:</b> calcVolume.cpp:38</div></div>
+<div class="ttc" id="calcVolume_8h_html_af0aa363e6e2e8b85fd30929e2449d823"><div class="ttname"><a href="calcVolume_8h.html#af0aa363e6e2e8b85fd30929e2449d823">calcVolumeParalelepipedo</a></div><div class="ttdeci">void calcVolumeParalelepipedo(float *h, float *c, float *l)</div><div class="ttdoc">Funcao que passa parametro para outra funcao fazer o calculo do volume de um  e apresenta o resultado...</div><div class="ttdef"><b>Definition:</b> calcVolume.cpp:51</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

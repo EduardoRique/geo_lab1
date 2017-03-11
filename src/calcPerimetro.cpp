@@ -1,3 +1,14 @@
+/** 
+*@file calcPerimetro.cpp
+*@brief Arquivo de corpo contendo a implentacao de funcoes que apresentaram
+*		os resultados dos calculos de perimetro na tela realizam a passagem 
+*		de parametros, para funcoes que farao os calculos
+*@author Luís Eduardo RIque
+*@author Ygor Almeida
+*@since 09/03/2017
+*@date  11/03/2017
+*/
+
 #include <iostream>
 using std::cout;
 using std::cin;

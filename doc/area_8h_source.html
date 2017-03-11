@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Geometrica: Código-Fonte de area.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Geometrica
+   </div>
+   <div id="projectbrief">Programa que permite o calculo de perimetro, area e volume de figuras geometricas, como: traingulo equilatero, retangulo, quadrado, circulo, piramide com base quadrangular,  cubo, paralelepipedo e esfera.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;Principal</span></a></li>
+      <li class="current"><a href="files.html"><span>Arquivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;Arquivos</span></a></li>
+      <li><a href="globals.html"><span>Membros&#160;dos&#160;Arquivos</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">area.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="area_8h.html">Vá para a documentação deste arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifndef AREA_H</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define AREA_H</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keywordtype">float</span> <a class="code" href="area_8h.html#a80f15f39cce528774cb24d99ce006cdf">areaTrianguloEquilatero</a>(<span class="keywordtype">float</span> *pntB, <span class="keywordtype">float</span> *pntH);</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keywordtype">float</span> <a class="code" href="area_8h.html#a86d9b621178c7d720160ec86ccb27c43">areaRetangulo</a>(<span class="keywordtype">float</span> *pntB, <span class="keywordtype">float</span> *pntH);</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keywordtype">float</span> <a class="code" href="area_8h.html#a70c46f3c1720ef26233ae557a4af65e2">areaQuadrado</a>(<span class="keywordtype">float</span> *pntL);</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keywordtype">float</span> <a class="code" href="area_8h.html#aeb158a3d5bf8c8844adcb65f34e2390c">areaCirculo</a>(<span class="keywordtype">float</span> *pntR);</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keywordtype">float</span> <a class="code" href="area_8h.html#a9dc94dda87016191cad384506c38fe93">areaPiramide</a>(<span class="keywordtype">float</span> *pntB1, <span class="keywordtype">float</span> *pntB2, <span class="keywordtype">float</span> *pntH);</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keywordtype">float</span> <a class="code" href="area_8h.html#a90ea05d2255b4b7e93e82bc071f2491a">areaCubo</a>(<span class="keywordtype">float</span> *pntL);</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keywordtype">float</span> <a class="code" href="area_8h.html#a2621653b31b71230299688e98050aec5">areaParalelepipedo</a>(<span class="keywordtype">float</span> *pntH, <span class="keywordtype">float</span> *pntC, <span class="keywordtype">float</span> *pntL);</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keywordtype">float</span> <a class="code" href="area_8h.html#a8ff3abb1cf010a3f4eb09efcaa38f558">areaEsfera</a>(<span class="keywordtype">float</span> *pntR);</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="area_8h_html_a86d9b621178c7d720160ec86ccb27c43"><div class="ttname"><a href="area_8h.html#a86d9b621178c7d720160ec86ccb27c43">areaRetangulo</a></div><div class="ttdeci">float areaRetangulo(float *pntB, float *pntH)</div><div class="ttdoc">Funcao que calcula a area de um retangulo. </div><div class="ttdef"><b>Definition:</b> area.cpp:30</div></div>
+<div class="ttc" id="area_8h_html_a90ea05d2255b4b7e93e82bc071f2491a"><div class="ttname"><a href="area_8h.html#a90ea05d2255b4b7e93e82bc071f2491a">areaCubo</a></div><div class="ttdeci">float areaCubo(float *pntL)</div><div class="ttdoc">Funcao que calcula a area de um cubo. </div><div class="ttdef"><b>Definition:</b> area.cpp:68</div></div>
+<div class="ttc" id="area_8h_html_a2621653b31b71230299688e98050aec5"><div class="ttname"><a href="area_8h.html#a2621653b31b71230299688e98050aec5">areaParalelepipedo</a></div><div class="ttdeci">float areaParalelepipedo(float *pntH, float *pntC, float *pntL)</div><div class="ttdoc">Funcao que calcula a area de um paralelepipedo. </div><div class="ttdef"><b>Definition:</b> area.cpp:79</div></div>
+<div class="ttc" id="area_8h_html_a9dc94dda87016191cad384506c38fe93"><div class="ttname"><a href="area_8h.html#a9dc94dda87016191cad384506c38fe93">areaPiramide</a></div><div class="ttdeci">float areaPiramide(float *pntB1, float *pntB2, float *pntH)</div><div class="ttdoc">Funcao que calcula a area de uma piramide. </div><div class="ttdef"><b>Definition:</b> area.cpp:59</div></div>
+<div class="ttc" id="area_8h_html_a70c46f3c1720ef26233ae557a4af65e2"><div class="ttname"><a href="area_8h.html#a70c46f3c1720ef26233ae557a4af65e2">areaQuadrado</a></div><div class="ttdeci">float areaQuadrado(float *pntL)</div><div class="ttdoc">Funcao que calcula a area de um quadrado. </div><div class="ttdef"><b>Definition:</b> area.cpp:39</div></div>
+<div class="ttc" id="area_8h_html_a80f15f39cce528774cb24d99ce006cdf"><div class="ttname"><a href="area_8h.html#a80f15f39cce528774cb24d99ce006cdf">areaTrianguloEquilatero</a></div><div class="ttdeci">float areaTrianguloEquilatero(float *pntB, float *pntH)</div><div class="ttdoc">Funcao que calcula a area de um trinagulo equilatero. </div><div class="ttdef"><b>Definition:</b> area.cpp:20</div></div>
+<div class="ttc" id="area_8h_html_aeb158a3d5bf8c8844adcb65f34e2390c"><div class="ttname"><a href="area_8h.html#aeb158a3d5bf8c8844adcb65f34e2390c">areaCirculo</a></div><div class="ttdeci">float areaCirculo(float *pntR)</div><div class="ttdoc">Funcao que calcula a area de um circulo. </div><div class="ttdef"><b>Definition:</b> area.cpp:48</div></div>
+<div class="ttc" id="area_8h_html_a8ff3abb1cf010a3f4eb09efcaa38f558"><div class="ttname"><a href="area_8h.html#a8ff3abb1cf010a3f4eb09efcaa38f558">areaEsfera</a></div><div class="ttdeci">float areaEsfera(float *pntR)</div><div class="ttdoc">Funcao que calcula a area de uma esfera. </div><div class="ttdef"><b>Definition:</b> area.cpp:88</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

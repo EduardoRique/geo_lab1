@@ -1,3 +1,14 @@
+/** 
+*@file area.h
+*@brief Arquivo cabecalho contendo a definicao de funcoes que realizam os 
+*		calculos para determinar areas e retornam valores para outras
+*		funcoes, para serem apresentados na tela
+*@author Luís Eduardo RIque
+*@author Ygor Almeida
+*@since 09/03/2017
+*@date  11/03/2017
+*/
+
 #ifndef AREA_H
 #define	AREA_H
 
