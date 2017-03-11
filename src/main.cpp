@@ -4,7 +4,7 @@
 *@author Luís Eduardo RIque
 *@author Ygor Almeida
 *@since 09/03/2017
-*@date  09/03/2017
+*@date  11/03/2017
 */
 
 #include <iostream>
@@ -17,12 +17,9 @@ using std::endl;
 #include "calcPerimetro.h"
 #include "calcVolume.h"
 
-//#DEFINE pi = 3.14159; /** < Definicao do PI */
-
 /**
 *@brief Funcao principal
 */
-
 int main(void){
 
 int opcao; /** < Opcao que sera passada pelo usuario */
@@ -53,72 +50,142 @@ do{
     
     switch(opcao) {
         case 1:
-            float b; /**< base do triangulo*/
-            float a; /**<altura do triangulo*/
+            float baseTriang; /**< base do triangulo*/
+            float alturaTriang; /**<altura do triangulo*/
 
-            cout << "Digite o tamanho da base do triangulo: ";
-            cin >> b;
-            cout << "Digite o tamanho da altura do triangulo: ";
-            cin >> a;
+            do {
+                cout << "Digite o tamanho da base do triangulo: ";
+                cin >> baseTriang;
+                cout << "Digite o tamanho da altura do triangulo: ";
+                cin >> alturaTriang;
+                if(baseTriang <= 0 || alturaTriang<=0) {
+                    cout << endl;
+                    cout << "Digite valores maiores que zero." << endl << endl;
+                }
+            } while(baseTriang <= 0 || alturaTriang<=0);
 
-            calcAreaTrianguloEquilatero(&b, &a);
-            calcPerimetroTrianguloEquilatero(&b);
+            calcAreaTrianguloEquilatero(&baseTriang, &alturaTriang);
+            calcPerimetroTrianguloEquilatero(&baseTriang);
             break;
         case 2:
-            float base; /**< base do retangulo*/
-            float altura; /**<altura do retangulo*/
+            float baseRetangulo; /**< base do retangulo*/
+            float alturaRetangulo; /**<altura do retangulo*/
 
-            cout << "Digite o tamanho da base do retangulo: ";
-            cin >> base;
-            cout << "Digite o tamanho da altura do retangulo: ";
-            cin >> altura;
+            do {
+                cout << "Digite o tamanho da base do retangulo: ";
+                cin >> baseRetangulo;
+                cout << "Digite o tamanho da altura do retangulo: ";
+                cin >> alturaRetangulo;
+                if(baseRetangulo <=0 || alturaRetangulo<=0) {
+                    cout << endl;
+                    cout << "Digite valores maiores que zero." << endl << endl;
+                }
+            }while(baseRetangulo <=0 || alturaRetangulo<=0);
 
-
-            calcAreaRetangulo(&base, &altura);
-            calcPerimetroRetangulo(&base, &altura);
+            calcAreaRetangulo(&baseRetangulo, &alturaRetangulo);
+            calcPerimetroRetangulo(&baseRetangulo, &alturaRetangulo);
             break;
         case 3:
-            float lado; /**< lado do quadrado*/
+            float ladoQuadrado; /**< lado do quadrado*/
             
-            cout << "Digite o tamanho do lado do quadrado: ";
-            cin >> lado;
+            do{
+                cout << "Digite o tamanho do lado do quadrado: ";
+                cin >> ladoQuadrado;
+                if(ladoQuadrado <=0) {
+                    cout << endl;
+                    cout << "Digite valores maiores que zero." << endl << endl;
+                }
+            }while(ladoQuadrado <=0);
 
-            calcAreaQuadrado(&lado);
-            calcPerimetroQuadrado(&lado);
+            calcAreaQuadrado(&ladoQuadrado);
+            calcPerimetroQuadrado(&ladoQuadrado);
             break;
         case 4:
-            float raio; /**< raio do circulo*/
-            
-            cout << "Digite o tamanho do raio do circulo: ";
-            cin >> raio;
+            float raioCirculo; /**< raio do circulo*/
+            do {
+                cout << "Digite o tamanho do raio do circulo: ";
+                cin >> raioCirculo;
+                if(raioCirculo <=0) {
+                    cout << endl;
+                    cout << "Digite valores maiores que zero." << endl << endl;
+                }
+            }while(raioCirculo <=0);
 
-            calcAreaCirculo(&raio);
-            calcPerimetroCirculo(&raio);
+            calcAreaCirculo(&raioCirculo);
+            calcPerimetroCirculo(&raioCirculo);
             break;
         case 5:
-            float lado_base; /**<lado da base da piramide */
-            float lado_triangulo; /**<lado da base do triangulo da piramide */
-            float altura_triangulo; /**<altura do triangulo da piramide */
+            float ladoBase; /**<lado da base da piramide */
+            float ladoTriangulo; /**<lado do triangulo da piramide */
+            float alturaTriangulo; /**<altura do triangulo da piramide */
 
-            cout << "Digite o tamanho da base da piramide: ";
-            cin >> lado_base;
-            cout << "Digite o tamanho da base lateral: ";
-            cin >> lado_triangulo;
-            cout << "Digite o tamanho da altura da piramide: ";
-            cin >> altura_triangulo;
+            do {
+                cout << "Digite o tamanho da base da piramide: ";
+                cin >> ladoBase;
+                cout << "Digite o tamanho da lateral da piramide: ";
+                cin >> ladoTriangulo;
+                cout << "Digite o tamanho da altura da piramide: ";
+                cin >> alturaTriangulo;
+                if(ladoBase <=0 || ladoTriangulo <=0 || alturaTriangulo <=0) {
+                    cout << endl;
+                    cout << "Digite valores maiores que zero." << endl << endl;
+                }
+            } while(ladoBase <=0 || ladoTriangulo <=0 || alturaTriangulo <=0);
 
-            calcAreaPiramide(&lado_base, &lado_triangulo, &altura_triangulo);
-            calcVolumePiramide(&lado_base, &altura_triangulo);
+            calcAreaPiramide(&ladoBase, &ladoTriangulo, &alturaTriangulo);
+            calcVolumePiramide(&ladoBase, &alturaTriangulo);
             break;
-        /**case 6:
-            calcCubo();
+        case 6:
+            float ladoCubo; /**<lado do cubo*/
+
+            do {
+                cout << "Digite o tamanho do lado do cubo: ";
+                cin >> ladoCubo;
+                if(ladoCubo<=0) {
+                    cout << endl;
+                    cout << "Digite valores maiores que zero." << endl << endl;
+                }
+            }while(ladoCubo <=0);
+
+            calcAreaCubo(&ladoCubo);
+            calcVolumeCubo(&ladoCubo);
             break;
         case 7:
-            calcParalelogramo();
+            float alturaParalelepipedo; /**<altura do paralelepipedo*/
+            float comprimentoParalelepipedo; /**<comprimento do paralelepipedo*/
+            float larguraParalelepipedo; /**<largura do paralelepipedo*/
+
+            do {
+                cout << "Digite o tamanho da altura do paralelepipedo: ";
+                cin >> alturaParalelepipedo;
+                cout << "Digite o tamanho do comprimento do paralelepipedo: ";
+                cin >> comprimentoParalelepipedo;
+                cout << "Digite o tamanho da largura do paralelepipedo: ";
+                cin >> larguraParalelepipedo;
+                if(alturaParalelepipedo <=0 || comprimentoParalelepipedo <=0 || larguraParalelepipedo <=0) {
+                    cout << endl;
+                    cout << "Digite valores maiores que zero." << endl << endl;
+                }
+            }while(alturaParalelepipedo <=0 || comprimentoParalelepipedo <=0 || larguraParalelepipedo <=0);
+
+            calcAreaParalelepipedo(&alturaParalelepipedo, &comprimentoParalelepipedo, &larguraParalelepipedo);
+            calcVolumeParalelepipedo(&alturaParalelepipedo, &comprimentoParalelepipedo, &larguraParalelepipedo);
             break;
         case 8:
-            calcEsfera();
-            break; */
+            float raioEsfera; /**<raio da esfera */
+
+            do {
+                cout << "Digite o tamanho do raio da esfera: ";
+                cin >> raioEsfera;
+                if(raioEsfera <=0) {
+                    cout << endl;
+                    cout << "Digite valores maiores que zero." << endl << endl;
+                }
+            }while(raioEsfera <=0);
+
+            calcAreaEsfera(&raioEsfera);
+            calcVolumeEsfera(&raioEsfera);
+            break;
         default:
             cout << "Programa finalizado" << endl;
 

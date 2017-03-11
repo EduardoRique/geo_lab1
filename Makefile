@@ -1,5 +1,5 @@
 #Makefile for "geometrica" C++application
-#Created by Luís Eduardo RIque and Ygor Almeida 09/03/2017
+#Created by Luís Eduardo RIque and Ygor Almeida 10/03/2017
 
 PROG = geometrica
 
