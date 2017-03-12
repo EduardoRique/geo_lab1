@@ -3,10 +3,10 @@
 *@brief Arquivo de corpo contendo a implentacao de funcoes que realizam os 
 *		calculos para determinar volumes e retornam valores para outras
 *		funcoes, para serem apresentados na tela
-*@author Luís Eduardo RIque
-*@author Ygor Almeida
+*@author Luís Eduardo RIque (luiseduardorique@gmail.com)
+*@author Ygor Almeida (ygoralmeida@gmail.com)
 *@since 09/03/2017
-*@date  11/03/2017
+*@date  12/03/2017
 */
 
 #ifndef VOLUME_H

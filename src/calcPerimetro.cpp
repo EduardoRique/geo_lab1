@@ -3,10 +3,10 @@
 *@brief Arquivo de corpo contendo a implentacao de funcoes que apresentaram
 *		os resultados dos calculos de perimetro na tela realizam a passagem 
 *		de parametros, para funcoes que farao os calculos
-*@author Luís Eduardo RIque
-*@author Ygor Almeida
+*@author Luís Eduardo RIque (luiseduardorique@gmail.com)
+*@author Ygor Almeida (ygoralmeida@gmail.com)
 *@since 09/03/2017
-*@date  11/03/2017
+*@date  12/03/2017
 */
 
 #include <iostream>

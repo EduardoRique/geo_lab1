@@ -1,10 +1,10 @@
 /** 
-*@file geometrica
+*@file main.cpp
 *@brief Programa que calcula perimetro, area e volume de figuras geometricas
-*@author Luís Eduardo RIque
-*@author Ygor Almeida
+*@author Luís Eduardo RIque (luiseduardorique@gmail.com)
+*@author Ygor Almeida (ygoralmeida@gmail.com)
 *@since 09/03/2017
-*@date  11/03/2017
+*@date  12/03/2017
 */
 
 #include <iostream>
@@ -22,7 +22,7 @@ using std::endl;
 */
 int main(void){
 
-int opcao; /** < Opcao que sera passada pelo usuario */
+int opcao; /**< Opcao que sera passada pelo usuario */
 do{ 
     cout << endl;
     cout << "=========================================" << endl;
@@ -50,8 +50,8 @@ do{
     
     switch(opcao) {
         case 1:
-            float baseTriang; /**< base do triangulo*/
-            float alturaTriang; /**<altura do triangulo*/
+            float baseTriang; /**< base do triangulo */
+            float alturaTriang; /**< altura do triangulo */
 
             do {
                 cout << "Digite o tamanho da base do triangulo: ";
@@ -68,8 +68,8 @@ do{
             calcPerimetroTrianguloEquilatero(&baseTriang);
             break;
         case 2:
-            float baseRetangulo; /**< base do retangulo*/
-            float alturaRetangulo; /**<altura do retangulo*/
+            float baseRetangulo; /**< base do retangulo */
+            float alturaRetangulo; /**< altura do retangulo */
 
             do {
                 cout << "Digite o tamanho da base do retangulo: ";
@@ -86,7 +86,7 @@ do{
             calcPerimetroRetangulo(&baseRetangulo, &alturaRetangulo);
             break;
         case 3:
-            float ladoQuadrado; /**< lado do quadrado*/
+            float ladoQuadrado; /**< lado do quadrado */
             
             do{
                 cout << "Digite o tamanho do lado do quadrado: ";
@@ -101,7 +101,7 @@ do{
             calcPerimetroQuadrado(&ladoQuadrado);
             break;
         case 4:
-            float raioCirculo; /**< raio do circulo*/
+            float raioCirculo; /**< raio do circulo */
             do {
                 cout << "Digite o tamanho do raio do circulo: ";
                 cin >> raioCirculo;
@@ -115,9 +115,9 @@ do{
             calcPerimetroCirculo(&raioCirculo);
             break;
         case 5:
-            float ladoBase; /**<lado da base da piramide */
-            float ladoTriangulo; /**<lado do triangulo da piramide */
-            float alturaTriangulo; /**<altura do triangulo da piramide */
+            float ladoBase; /**< lado da base da piramide */
+            float ladoTriangulo; /**< lado do triangulo da piramide */
+            float alturaTriangulo; /**< altura do triangulo da piramide */
 
             do {
                 cout << "Digite o tamanho da base da piramide: ";
@@ -136,7 +136,7 @@ do{
             calcVolumePiramide(&ladoBase, &alturaTriangulo);
             break;
         case 6:
-            float ladoCubo; /**<lado do cubo*/
+            float ladoCubo; /**< lado do cubo*/
 
             do {
                 cout << "Digite o tamanho do lado do cubo: ";
@@ -151,9 +151,9 @@ do{
             calcVolumeCubo(&ladoCubo);
             break;
         case 7:
-            float alturaParalelepipedo; /**<altura do paralelepipedo*/
-            float comprimentoParalelepipedo; /**<comprimento do paralelepipedo*/
-            float larguraParalelepipedo; /**<largura do paralelepipedo*/
+            float alturaParalelepipedo; /**< altura do paralelepipedo */
+            float comprimentoParalelepipedo; /**< comprimento do paralelepipedo */
+            float larguraParalelepipedo; /**< largura do paralelepipedo */
 
             do {
                 cout << "Digite o tamanho da altura do paralelepipedo: ";
@@ -172,7 +172,7 @@ do{
             calcVolumeParalelepipedo(&alturaParalelepipedo, &comprimentoParalelepipedo, &larguraParalelepipedo);
             break;
         case 8:
-            float raioEsfera; /**<raio da esfera */
+            float raioEsfera; /**< raio da esfera */
 
             do {
                 cout << "Digite o tamanho do raio da esfera: ";

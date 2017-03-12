@@ -3,10 +3,10 @@
 *@brief Arquivo cabecalho contendo a definicao de funcoes que apresentam 
 *		os resultados dos calculos de perimetro na tela realizam a passagem 
 *		de parametros, para funcoes que faram os calculos
-*@author Luís Eduardo RIque
-*@author Ygor Almeida
+*@author Luís Eduardo RIque (luiseduardorique@gmail.com)
+*@author Ygor Almeida (ygoralmeida@gmail.com)
 *@since 09/03/2017
-*@date  11/03/2017
+*@date  12/03/2017
 */
 
 #ifndef CALCPERIMETRO_H

@@ -3,10 +3,10 @@
 *@brief Arquivo cabecalho contendo a definicao de funcoes que realizam os 
 *		calculos para determinar areas e retornam valores para outras
 *		funcoes, para serem apresentados na tela
-*@author Luís Eduardo RIque
-*@author Ygor Almeida
+*@author Luís Eduardo RIque (luiseduardorique@gmail.com)
+*@author Ygor Almeida (ygoralmeida@gmail.com)
 *@since 09/03/2017
-*@date  11/03/2017
+*@date  12/03/2017
 */
 
 #ifndef AREA_H
@@ -43,7 +43,7 @@ float areaQuadrado(float *pntL);
 float areaCirculo(float *pntR);
 
 /**
-*@brief Funcao que calcula a area de uma piramide
+*@brief Funcao que calcula a area de uma piramide de base quadangular
 *@param *pntB1 ponteiro tipo float que aponta para o apontador do valor da base
 *@param *pntB1 ponteiro tipo float que aponta para o apontador do valor da base do triangulo
 *@param *pntH ponteiro tipo float que aponta para o apontador do valor da altura
